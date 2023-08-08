@@ -193,3 +193,35 @@ header .offcanvas-body .social-icons .link:hover{
     transition: all 0.2s;
     border: 1px solid var(--color--1);
 }
+
+header .offcanvas-body .contact-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header .offcanvas-body .contact-links .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    font-weight: 500;
+    color: var(--color--white);
+    border-radius: 10px;
+}
+header .offcanvas-body  .contact-links .link i{ 
+    font-size: 26px;
+    margin-right: 10px;
+    transition: all 0.1s;
+}
+
+header .offcanvas-body .nav-links .link:hover {
+    color: var(--color--1);
+    background-color: var(--color--1);
+    border: 1px solid;
+    border-radius: 10px;
+
+}
