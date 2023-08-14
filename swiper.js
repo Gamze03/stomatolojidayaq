@@ -29,7 +29,11 @@ const swiperPartners = new Swiper(" .swiper-partners", {
     },
     breakpoints: {
         
-
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        
         1024: {
             slidesPerView: 5,
             spaceBetween: 30,
@@ -37,3 +41,23 @@ const swiperPartners = new Swiper(" .swiper-partners", {
     }
 });
 
+const swiperWorkers = new Swiper(" .swiper-workers", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    speed: 1000,
+    autoplay: {
+        delay: 2000,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        
+
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        }
+    }
+});
