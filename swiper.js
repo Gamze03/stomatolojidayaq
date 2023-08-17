@@ -1,6 +1,5 @@
 const bannerSwiper = new Swiper(".banner-swiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
     speed: 1000,
     loop: true,
     autoplay: {
@@ -41,9 +40,9 @@ const swiperPartners = new Swiper(" .swiper-partners", {
     }
 });
 
-const swiperWorkers = new Swiper(" .swiper-workers", {
+const swiperWorkers = new Swiper(" .workers-swiper", {
     slidesPerView: 5,
-    spaceBetween: 30,
+    spaceBetween: 10,
     speed: 1000,
     autoplay: {
         delay: 2000,
@@ -54,6 +53,10 @@ const swiperWorkers = new Swiper(" .swiper-workers", {
     },
     breakpoints: {
         
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
 
         1024: {
             slidesPerView: 5,
