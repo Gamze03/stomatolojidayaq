@@ -115,7 +115,7 @@ header .logo img {
     }
 }
 
-header .top-nav .menu {
+header .menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -128,12 +128,15 @@ header .top-nav .menu {
     flex-direction: column;
 }
 
-header .menu .nav-links {
-    padding: 0 15px;
-    margin-bottom: 0;
-    flex-direction: row;
-}
 
+ header .menu .nav-links {
+        padding: 0 15px;
+        margin-bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+}
 header .nav-links a.link {
     font-size: 16px;
     font-weight: 600;
