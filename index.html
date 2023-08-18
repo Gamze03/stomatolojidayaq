@@ -10,12 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
 
-
+    <button onclick="scrollToTop" class="page-scroll-button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
 
     <header>
         <nav class="top-nav">
@@ -29,13 +32,13 @@
                     </a>
 
                     <div class="menu d-none d-xl-flex">
-                        <div class="nav-links">
+                        <div class="nav-links page-links">
                             <a class="link active" href="">Əsas Səhifə</a>
                             <a class="link" href="">Haqqımızda</a>
-                            <a class="link" href="">Müraciət</a>
+                            <a class="link" href="#appeal">Müraciət</a>
                             <a class="link" href="">Tərəfdaşlar</a>
                             <a class="link" href="">Qalereya</a>
-                            <a class="link" href="">Hesabat</a>
+                            <a class="link" href="#report">Hesabat</a>
                             <a class="link" href="">Əlaqə</a>
                         </div>
                     </div>
@@ -132,7 +135,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" data-scroll="true">
             <div class="swiper banner-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -140,10 +143,10 @@
                             <div class="content">
                                 <div class="container">
                                     <div class="text">
-                                        <div class="large-text">
+                                        <div class="large-text" data-aos="fade-down">
                                             <p>Könüllülərimiz peşəkarlardır</p>
                                         </div>
-                                        <div class="small-text">
+                                        <div class="small-text" data-aos="fade-up">
                                             <p>Peşəkar stomatoloq və diş texnikləri layihəmizdə təmənnasız xidmət
                                                 göstərən könüllülərimizdir</p>
                                         </div>
@@ -192,7 +195,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" data-scroll="true" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -200,7 +203,7 @@
                             stomatoloji dayaq layihəsi haqqında
                         </h2>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="zoom-in-down">
                         <div class="content">
                             <span class="text-title">
                                 Haqqımızda
@@ -218,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="zoom-in-down">
                         <div class="content">
                             <span class="text-title">
                                 Məqsədimiz
@@ -239,10 +242,10 @@
             </div>
         </section>
 
-        <section class="form main-section">
+        <section class="form" data-scroll="true">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 ">
+                    <div class="col-12 col-lg-6" data-aos="zoom-in">
                         <form class="general-form left">
                             <span class="form-title">
                                 Həkim və texniklərin qeydiyyatı </span>
@@ -376,7 +379,7 @@
                         </form>
                     </div>
 
-                    <div class="col-12 col-lg-6 ">
+                    <div class="col-12 col-lg-6"  data-aos="zoom-in">
                         <form class="general-form right">
                             <span class="form-title">
                                 Həkim və texniklərin qeydiyyatı </span>
@@ -463,7 +466,7 @@
         </section>
 
 
-        <section class="partners">
+        <section class="partners" data-scroll="true"  data-aos="zoom-in">
             <div class="container">
                 <h2 class="section-title">
                     Tərəfdaşlar
@@ -531,7 +534,7 @@
         </section>
 
 
-        <section class="workers">
+        <section class="workers" data-scroll="false"  data-aos="zoom-in">
             <div class="container">
                 <h2 class="section-title">Həkim və texniklərimiz</h2>
                 <div class="worker-amount">
@@ -666,8 +669,8 @@
         </section>
 
 
-        <section class="gallery">
-            <div class="container">
+        <section class="gallery" data-scroll="true">
+            <div class="container"  data-aos="fade-up">
                 <h2 class="section-title">Qalereya</h2>
 
                 <div class="gallery-buttons">
@@ -678,7 +681,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-1.jpg" alt="">
@@ -694,7 +697,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-2.jpg" alt="">
@@ -710,7 +713,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-3.jpg" alt="">
@@ -726,7 +729,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="1" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-4.jpg" alt="">
@@ -742,7 +745,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-5.jpg" alt="">
@@ -758,7 +761,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-6.jpg" alt="">
@@ -774,7 +777,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-7.jpg" alt="">
@@ -790,7 +793,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="2" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-8.jpg" alt="">
@@ -806,7 +809,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-9.jpg" alt="">
@@ -822,7 +825,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-10.jpg" alt="">
@@ -838,7 +841,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-11.jpg" alt="">
@@ -854,7 +857,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3 gallery-col" data-category-id="3" data-aos="zoom-in">
                         <div class="item">
                             <div class="image">
                                 <img src="./image/gallery/img-12.jpg" alt="">
@@ -874,7 +877,7 @@
 
         </section>
 
-        <section class="counter">
+        <section class="counter" data-scroll="true" id="report">
             <div class="container">
                 <h2 class="section-title">
                     Hesabat
@@ -888,7 +891,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-1.png" alt="">
-                            <span class="counter-span">375</span>
+                            <span class="counter-span" data-val="375">000</span>
                             <span class="label">Pasiyentlər</span>
 
                         </div>
@@ -897,7 +900,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-2.png" alt="">
-                            <span class="counter-span">688</span>
+                            <span class="counter-span" data-val="688">000</span>
                             <span class="label">Diş müalicəsi</span>
 
                         </div>
@@ -906,7 +909,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-3.png" alt="">
-                            <span class="counter-span">528</span>
+                            <span class="counter-span" data-val="528">000</span>
                             <span class="label">Dis bərpası</span>
 
                         </div>
@@ -915,7 +918,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-4.png" alt="">
-                            <span class="counter-span">116</span>
+                            <span class="counter-span" data-val="116">000</span>
                             <span class="label">Rentgen müayinələri</span>
 
                         </div>
@@ -924,7 +927,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-5.png" alt="">
-                            <span class="counter-span">157</span>
+                            <span class="counter-span" data-val="157">000</span>
                             <span class="label">Total protezlər</span>
 
                         </div>
@@ -933,7 +936,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-6.png" alt="">
-                            <span class="counter-span">1257</span>
+                            <span class="counter-span" data-val="1257">000</span>
                             <span class="label">Keramika qapaqlar</span>
 
                         </div>
@@ -943,7 +946,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-7.png" alt="">
-                            <span class="counter-span">517</span>
+                            <span class="counter-span" data-val="517">000</span>
                             <span class="label">Cərrahi prosedurlar</span>
 
                         </div>
@@ -953,7 +956,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="counter-item">
                             <img src="./image/counter/img-8.png" alt="">
-                            <span class="counter-span">25</span>
+                            <span class="counter-span" data-val="25">000</span>
                             <span class="label">Ortodontik aparatlar</span>
 
                         </div>
@@ -964,8 +967,8 @@
             </div>
         </section>
 
-        <section class="contact">
-            <div class="container">
+        <section class="contact" data-scroll="true">
+            <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="section-title">
@@ -979,7 +982,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-6" data-aos="zoom-in-down">
                         <div class="contact-wrapper">
                             <div class="link">
                                 <span class="icon">
@@ -1063,6 +1066,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
     <script src="swiper.js"></script>
     <script src="project.js"></script>
 </body>
